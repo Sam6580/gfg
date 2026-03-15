@@ -48,11 +48,11 @@ const navSections = [
 export default function Sidebar() {
   return (
     <aside className="sidebar">
-      <NavLink to="/dashboard" className="sidebar-logo">
-        <div className="sidebar-logo-icon">⚡</div>
-        <div className="sidebar-logo-text">
-          <span className="brand">CodeVerse AI</span>
-          <span className="tagline">Campus Ecosystem</span>
+      <NavLink to="/dashboard" className="sidebar-logo" style={{ gap: '12px' }}>
+        <div style={{ color: 'var(--emerald)', fontSize: '26px', fontWeight: 'bold', fontFamily: 'var(--font-mono)' }}>{`</>`}</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '22px', fontWeight: 'bold' }}>
+          <span style={{ color: '#ffffff' }}>GFG</span>
+          <span style={{ color: '#94a3b8', fontWeight: '600' }}>Club</span>
         </div>
       </NavLink>
 

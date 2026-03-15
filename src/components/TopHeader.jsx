@@ -27,7 +27,7 @@ const pageTitles = {
 
 export default function TopHeader() {
   const { pathname } = useLocation()
-  const title = pageTitles[pathname] ?? 'CodeVerse AI'
+  const title = pageTitles[pathname] ?? 'GFG Club'
 
   // Duplicate ticker items for seamless loop
   const allItems = [...tickerItems, ...tickerItems]

@@ -180,7 +180,7 @@ export default function Contact() {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'var(--text-muted)' }}>
           <span style={{ fontSize: 16 }}>⚡</span>
-          <span style={{ fontWeight: 600, color: 'var(--text-secondary)' }}>CodeVerse AI</span>
+          <span style={{ fontWeight: 600, color: 'var(--text-secondary)' }}>GFG Club</span>
           <span>· GFG Campus Club</span>
         </div>
         <div style={{ fontSize: 12, color: 'var(--text-muted)', fontFamily: 'JetBrains Mono' }}>

@@ -4,7 +4,7 @@ import { Zap, Award, Flame, Star, Trophy, TrendingUp } from 'lucide-react'
 const milestones = [
   {
     date: 'January 2024', dot: 'cyan', title: 'Started the DSA Journey',
-    desc: 'Enrolled in the campus DSA Bootcamp. Solved first 10 LeetCode problems. Joined CodeVerse Club.',
+    desc: 'Enrolled in the campus DSA Bootcamp. Solved first 10 LeetCode problems. Joined GFG Club.',
     xp: 200, badges: ['🚀 First Problem', '🧠 Bootcamp Join']
   },
   {
@@ -38,8 +38,8 @@ const milestones = [
     xp: 600, badges: ['🌍 OSS Contributor', '⭐ 47 Stars']
   },
   {
-    date: 'January 2025', dot: 'amber', title: 'Started CodeVerse AI Project',
-    desc: 'Leading development of CodeVerse AI — a self-evolving campus coding ecosystem built for the college hackathon.',
+    date: 'January 2025', dot: 'amber', title: 'Started GFG Club Platform Project',
+    desc: 'Leading development of the GFG Club platform — a self-evolving campus coding ecosystem built for the community.',
     xp: 900, badges: ['🧬 Builder', '🏗️ Project Lead']
   },
 ]
