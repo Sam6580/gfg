@@ -12,6 +12,8 @@ import PersonalJourney from './pages/PersonalJourney'
 import AIEventGenerator from './pages/AIEventGenerator'
 import Leaderboard from './pages/Leaderboard'
 import AICollaborationFinder from './pages/AICollaborationFinder'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 export default function App() {
   return (
@@ -34,6 +36,8 @@ export default function App() {
               <Route path="/ai-events" element={<AIEventGenerator />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
               <Route path="/ai-collab" element={<AICollaborationFinder />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
         </div>

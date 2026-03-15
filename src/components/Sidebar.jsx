@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import {
   LayoutDashboard, Dna, Network, Brain, Users, FolderGit2,
-  Map, Trophy, Zap, CalendarHeart, ChevronRight, Handshake
+  Map, Trophy, Zap, CalendarHeart, ChevronRight, Handshake, Info, Mail
 } from 'lucide-react'
 
 const navSections = [
@@ -34,6 +34,13 @@ const navSections = [
     items: [
       { to: '/team-builder', icon: Users, label: 'Team Builder' },
       { to: '/projects', icon: FolderGit2, label: 'Project Ecosystem' },
+    ]
+  },
+  {
+    label: 'Info',
+    items: [
+      { to: '/about', icon: Info, label: 'About' },
+      { to: '/contact', icon: Mail, label: 'Contact' },
     ]
   }
 ]
