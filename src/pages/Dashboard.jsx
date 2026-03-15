@@ -29,10 +29,10 @@ const feedItems = [
 ]
 
 const AIInsights = [
-  { color: 'rose', icon: '⚠️', title: 'Struggle Alert — Dynamic Programming', text: '63% of students who attempted DP this week scored below 50%. Recommend scheduling a workshop.' },
-  { color: 'amber', icon: '📈', title: 'Trending Topic — Large Language Models', text: '47 students searched "LLM fine-tuning" this week. Consider an intro session.' },
-  { color: 'cyan', icon: '🤝', title: 'Collaboration Opportunity', text: 'Rahul (AI/ML) and Priya (Frontend) have complementary skills for 2 open project ideas.' },
-  { color: 'emerald', icon: '🏆', title: 'Club Health — Strong', text: 'Problems solved up 18% vs last week. 23 new members joined this month.' },
+  { color: 'rose', icon: '⚠️', title: 'Learning Struggle', text: '63% of students attempting Dynamic Programming scored < 50%. Recommend workshop.' },
+  { color: 'cyan', icon: '📈', title: 'Trending Skill', text: '47 students searched "LLM fine-tuning" this week. High demand for intro session.' },
+  { color: 'violet', icon: '🤝', title: 'Collaboration Match', text: 'Rahul (ML) and Priya (Frontend) have complementary skills for 2 open ideas.' },
+  { color: 'emerald', icon: '💚', title: 'Club Health', text: 'Problems solved up 18% vs last week. 23 new members joined this month.' },
 ]
 
 function AnimatedCounter({ target, suffix = '' }) {

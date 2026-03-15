@@ -181,10 +181,28 @@ export default function AIStudyPartner() {
         {/* Output Plan */}
         <div>
           {!generated && !loading && (
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '60px 20px', opacity: 0.5 }}>
-              <Brain size={56} style={{ color: 'var(--cyan)', marginBottom: 16 }} />
-              <div style={{ fontSize: 15, fontWeight: 600, marginBottom: 8, textAlign: 'center' }}>Your personalized plan will appear here</div>
-              <div style={{ fontSize: 13, color: 'var(--text-secondary)', textAlign: 'center' }}>Set your goal and timeline, then hit Generate.</div>
+            <div style={{ opacity: 0.4, transition: 'opacity 0.3s', pointerEvents: 'none', filter: 'grayscale(1)' }}>
+              <div className="glass-card" style={{ padding: 20, marginBottom: 20, borderStyle: 'dashed' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+                  <div>
+                    <div style={{ fontSize: 16, fontWeight: 700, marginBottom: 4 }}>📅 Example Roadmap Preview</div>
+                    <div style={{ fontSize: 12, color: 'var(--text-muted)', fontFamily: 'JetBrains Mono' }}>Dynamic based on input</div>
+                  </div>
+                </div>
+                {/* Mock Phases */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                  {[1, 2].map((i) => (
+                    <div key={i} style={{ padding: 14, borderRadius: 10, background: 'var(--bg-glass)', border: '1px solid var(--border)' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+                        <span style={{ fontWeight: 600, fontSize: 13, background: 'var(--text-muted)', color: 'transparent', borderRadius: 4 }}>Phase {i}: Placeholder</span>
+                        <span style={{ fontSize: 11, background: 'var(--text-muted)', color: 'transparent', borderRadius: 4 }}>Weeks 1-2</span>
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4, background: 'var(--text-muted)', color: 'transparent', borderRadius: 4, width: '80%' }}>Item 1</div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--text-muted)', color: 'transparent', borderRadius: 4, width: '60%' }}>Item 2</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
 

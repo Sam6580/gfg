@@ -61,7 +61,8 @@ export default function About() {
           <div className="glass-card" style={{ padding: 28 }}>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: 'var(--text-secondary)', marginBottom: 16 }}>
               <strong style={{ color: 'var(--text-primary)' }}>GeeksforGeeks Campus Club</strong> was founded in 2021 by a group of
-              passionate coders who wanted to bridge the gap between classroom learning and real-world technical skills.
+              passionate coders who wanted to bridge the gap between classroom learning and real-world technical skills. 
+              The GeeksforGeeks Campus Club at RIT is part of the global GeeksforGeeks student community.
             </p>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: 'var(--text-secondary)', marginBottom: 24 }}>
               Today, we are a thriving community of <span style={{ color: 'var(--cyan)', fontWeight: 600 }}>500+ students</span> from CSE,

@@ -177,9 +177,28 @@ export default function TeamBuilder() {
           )}
 
           {!team && !loading && (
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 20px', opacity: 0.45 }}>
-              <Users size={56} style={{ color: 'var(--violet-bright)', marginBottom: 16 }} />
-              <div style={{ fontSize: 15, fontWeight: 600, textAlign: 'center' }}>Your AI-matched team will appear here</div>
+            <div style={{ opacity: 0.35, pointerEvents: 'none', filter: 'grayscale(1)', transition: 'opacity 0.3s' }}>
+              <div className="glass-card card-glow-violet" style={{ padding: 20, marginBottom: 20, borderStyle: 'dashed' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+                  <div>
+                    <div style={{ fontSize: 16, fontWeight: 700 }}>🏆 Recommended Team Preview</div>
+                    <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>AI matching in progress...</div>
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+                {[1,2,3,4].map(i => (
+                  <div className="team-card" key={i} style={{ padding: 16, borderStyle: 'dashed' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+                      <div style={{ width: 50, height: 50, borderRadius: '50%', background: 'var(--border)' }} />
+                      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                        <div style={{ background: 'var(--text-muted)', color: 'transparent', height: 14, width: '40%', borderRadius: 4 }}>Name</div>
+                        <div style={{ background: 'var(--text-muted)', color: 'transparent', height: 10, width: '60%', borderRadius: 4 }}>Role</div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 

@@ -77,7 +77,7 @@ export default function PersonalJourney() {
           <div style={{ flex: 1, minWidth: 200 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
               <div>
-                <span style={{ fontWeight: 700, fontSize: 18, marginRight: 10 }}>Level {level} Coder</span>
+                <span style={{ fontWeight: 800, fontSize: 18, marginRight: 10, color: 'var(--cyan)', textShadow: '0 0 12px rgba(0,229,255,0.6)', letterSpacing: 1 }}>LEVEL {level} CODER</span>
                 <span className="tag tag-cyan">Sam Houston</span>
               </div>
               <span style={{ fontFamily: 'JetBrains Mono', color: 'var(--cyan)', fontWeight: 700, fontSize: 16 }}>

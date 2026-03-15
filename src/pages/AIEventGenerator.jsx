@@ -72,7 +72,7 @@ export default function AIEventGenerator() {
       <div className="page-header">
         <div className="eyebrow">// TREND INTELLIGENCE</div>
         <h1><span className="gradient-text">AI Event Generator</span></h1>
-        <p>The AI monitors what students are searching, struggling with, and discussing — then recommends the most impactful events to run next.</p>
+        <p>The AI analyzes student search trends, skill demand, and recent coding activity to recommend impactful events.</p>
       </div>
 
       <div className="grid-40-60">

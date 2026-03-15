@@ -9,7 +9,9 @@ const events = [
     type: 'Hackathon',
     participants: 124,
     tags: ['AI', 'Web3', 'Open Source'],
-    color: 'violet'
+    color: 'violet',
+    status: 'Registration Open',
+    statusColor: 'var(--emerald)'
   },
   {
     title: 'Data Structures & Algorithms Bootcamp',
@@ -19,7 +21,9 @@ const events = [
     type: 'Workshop',
     participants: 45,
     tags: ['DSA', 'Interviews', 'CPP'],
-    color: 'emerald'
+    color: 'emerald',
+    status: 'Upcoming',
+    statusColor: 'var(--cyan)'
   },
   {
     title: 'Tech Talk: Scaling Microservices',
@@ -29,7 +33,9 @@ const events = [
     type: 'Speaker Session',
     participants: 80,
     tags: ['System Design', 'Backend'],
-    color: 'cyan'
+    color: 'cyan',
+    status: 'Completed',
+    statusColor: 'var(--text-muted)'
   }
 ]
 
@@ -76,7 +82,12 @@ export default function UpcomingEvents() {
                   </span>
                 ))}
               </div>
-              <h3 style={{ fontSize: 20, marginBottom: 12 }}>{evt.title}</h3>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+                <h3 style={{ fontSize: 20, margin: 0 }}>{evt.title}</h3>
+                <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 4, background: 'var(--bg-glass)', color: evt.statusColor, border: `1px solid ${evt.statusColor}44`, textTransform: 'uppercase' }}>
+                  {evt.status}
+                </span>
+              </div>
               
               <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 12 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'var(--text-secondary)' }}>

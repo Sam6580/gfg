@@ -67,7 +67,7 @@ export default function CodingGraph() {
       <div className="page-header">
         <div className="eyebrow">// NETWORK INTELLIGENCE</div>
         <h1><span className="gradient-text">Campus Coding Graph</span></h1>
-        <p>An interactive map of the coding network. Each node is a student. Connections represent shared skills, collaborations, and project partnerships. Hover or click to explore.</p>
+        <p>An interactive map of the coding network. Each node represents a student. Edges represent collaborations or shared skills. Hover or click to explore.</p>
       </div>
 
       <div className="grid-65-35">

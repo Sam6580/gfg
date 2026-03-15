@@ -169,7 +169,7 @@ export default function LearningPaths() {
                 <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 4 }}>{track.recommendation.title}</div>
                 <div className="insight-text" style={{ marginBottom: 12 }}>{track.recommendation.date}</div>
                 <div style={{ display: 'flex', gap: 10 }}>
-                  <button className="btn btn-violet btn-sm">Schedule Workshop</button>
+                  <button className="btn btn-violet btn-sm" onClick={() => window.location.href = '/ai-events'}>Schedule Workshop</button>
                   <button className="btn btn-ghost btn-sm">View Details</button>
                 </div>
               </div>

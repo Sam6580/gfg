@@ -2,14 +2,11 @@ import { useLocation } from 'react-router-dom'
 import { Bell, Search, Wifi } from 'lucide-react'
 
 const tickerItems = [
-  { label: 'Problems Solved Today', value: '3,420' },
-  { label: 'Active Coders Now', value: '184' },
+  { label: 'Active Coders', value: '184' },
+  { label: 'Problems Solved', value: '3,420' },
   { label: 'Ongoing Projects', value: '47' },
   { label: 'Events This Month', value: '8' },
-  { label: 'New Members This Week', value: '23' },
-  { label: 'Top Skill: Web Dev', value: '120 students' },
-  { label: 'Campus CP Rating', value: '1824 avg' },
-  { label: 'GitHub Commits Today', value: '612' },
+  { label: 'New Members', value: '23' },
 ]
 
 const pageTitles = {

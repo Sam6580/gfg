@@ -51,7 +51,7 @@ export default function SkillGenome() {
       <div className="page-header">
         <div className="eyebrow">// CAMPUS DNA</div>
         <h1><span className="gradient-text-emerald">Campus Skill Genome</span></h1>
-        <p>A real-time molecular map of every skill across the campus coding community. See what RIT excels at and where the next opportunity lies.</p>
+        <p>This visualizes the coding DNA of the campus community. See what RIT excels at and where the next opportunity lies.</p>
       </div>
 
       <div className="stats-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)', marginBottom: 28 }}>
