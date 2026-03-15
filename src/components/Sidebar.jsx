@@ -60,11 +60,11 @@ const navSections = [
 export default function Sidebar() {
   return (
     <aside className="sidebar">
-      <NavLink to="/dashboard" className="sidebar-logo" style={{ gap: '12px' }}>
-        <div style={{ color: 'var(--emerald)', fontSize: '26px', fontWeight: 'bold', fontFamily: 'var(--font-mono)' }}>{`</>`}</div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '22px', fontWeight: 'bold' }}>
-          <span style={{ color: '#ffffff' }}>GFG</span>
-          <span style={{ color: '#94a3b8', fontWeight: '600' }}>Club</span>
+      <NavLink to="/dashboard" className="sidebar-logo" style={{ gap: '12px', alignItems: 'center' }}>
+        <div style={{ color: 'var(--emerald)', fontSize: '26px', fontWeight: 'bold', fontFamily: 'var(--font-mono)', letterSpacing: '3px' }}>{`</>`}</div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <span style={{ color: '#ffffff', fontSize: '15px', fontWeight: '700', letterSpacing: '-0.3px' }}>GFG Campus Club</span>
+          <span style={{ color: '#94a3b8', fontSize: '12px', fontWeight: '500', fontFamily: 'var(--font-mono)' }}>RIT</span>
         </div>
       </NavLink>
 
