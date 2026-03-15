@@ -14,6 +14,8 @@ import Leaderboard from './pages/Leaderboard'
 import AICollaborationFinder from './pages/AICollaborationFinder'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Team from './pages/Team'
+import UpcomingEvents from './pages/UpcomingEvents'
 
 export default function App() {
   return (
@@ -37,6 +39,8 @@ export default function App() {
               <Route path="/leaderboard" element={<Leaderboard />} />
               <Route path="/ai-collab" element={<AICollaborationFinder />} />
               <Route path="/about" element={<About />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/upcoming-events" element={<UpcomingEvents />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>

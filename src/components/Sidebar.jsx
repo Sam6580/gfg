@@ -15,13 +15,13 @@ const navSections = [
     label: 'Club',
     items: [
       { to: '/about', icon: Info, label: 'About' },
-      { to: '/team', icon: UsersRound, label: 'Team', badge: 'WIP' },
+      { to: '/team', icon: UsersRound, label: 'Team' },
     ]
   },
   {
     label: 'Events',
     items: [
-      { to: '/upcoming-events', icon: CalendarDays, label: 'Upcoming Events', badge: 'WIP' },
+      { to: '/upcoming-events', icon: CalendarDays, label: 'Upcoming Events' },
       { to: '/ai-events', icon: CalendarHeart, label: 'AI Event Generator', badge: 'NEW' },
     ]
   },
