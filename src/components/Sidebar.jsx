@@ -1,28 +1,32 @@
 import { NavLink } from 'react-router-dom'
 import {
   LayoutDashboard, Dna, Network, Brain, Users, FolderGit2,
-  Map, Trophy, Zap, CalendarHeart, ChevronRight, Handshake, Info, Mail
+  Map, Trophy, Zap, CalendarHeart, ChevronRight, Handshake, Info, Mail, UsersRound, CalendarDays
 } from 'lucide-react'
 
 const navSections = [
   {
-    label: 'Overview',
+    label: 'Dashboard',
     items: [
       { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard', badge: 'LIVE' },
-      { to: '/leaderboard', icon: Trophy, label: 'Leaderboard' },
     ]
   },
   {
-    label: 'Intelligence',
+    label: 'Club',
     items: [
-      { to: '/skill-genome', icon: Dna, label: 'Skill Genome' },
-      { to: '/coding-graph', icon: Network, label: 'Coding Graph' },
-      { to: '/ai-events', icon: CalendarHeart, label: 'AI Events', badge: 'NEW' },
-      { to: '/ai-collab', icon: Handshake, label: 'AI Collab Finder', badge: 'NEW' },
+      { to: '/about', icon: Info, label: 'About' },
+      { to: '/team', icon: UsersRound, label: 'Team', badge: 'WIP' },
     ]
   },
   {
-    label: 'Learning',
+    label: 'Events',
+    items: [
+      { to: '/upcoming-events', icon: CalendarDays, label: 'Upcoming Events', badge: 'WIP' },
+      { to: '/ai-events', icon: CalendarHeart, label: 'AI Event Generator', badge: 'NEW' },
+    ]
+  },
+  {
+    label: 'Learning Hub',
     items: [
       { to: '/ai-study-partner', icon: Brain, label: 'AI Study Partner' },
       { to: '/learning-paths', icon: Map, label: 'Learning Paths' },
@@ -30,16 +34,24 @@ const navSections = [
     ]
   },
   {
+    label: 'Community',
+    items: [
+      { to: '/leaderboard', icon: Trophy, label: 'Leaderboard' },
+      { to: '/skill-genome', icon: Dna, label: 'Skill Map' },
+      { to: '/coding-graph', icon: Network, label: 'Campus Coding Network' },
+    ]
+  },
+  {
     label: 'Collaboration',
     items: [
       { to: '/team-builder', icon: Users, label: 'Team Builder' },
+      { to: '/ai-collab', icon: Handshake, label: 'AI Collab Finder', badge: 'NEW' },
       { to: '/projects', icon: FolderGit2, label: 'Project Ecosystem' },
     ]
   },
   {
-    label: 'Info',
+    label: 'Support',
     items: [
-      { to: '/about', icon: Info, label: 'About' },
       { to: '/contact', icon: Mail, label: 'Contact' },
     ]
   }
