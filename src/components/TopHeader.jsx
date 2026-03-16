@@ -1,5 +1,6 @@
+import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import { Bell, Search, Wifi } from 'lucide-react'
+import { Bell, Search, Wifi, Sun, Moon } from 'lucide-react'
 
 const tickerItems = [
   { label: 'Active Coders', value: '184' },
@@ -25,6 +26,15 @@ const pageTitles = {
 export default function TopHeader() {
   const { pathname } = useLocation()
   const title = pageTitles[pathname] ?? 'GFG Club'
+  const [isLight, setIsLight] = useState(false)
+
+  useEffect(() => {
+    if (isLight) {
+      document.documentElement.setAttribute('data-theme', 'light')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+    }
+  }, [isLight])
 
   // Duplicate ticker items for seamless loop
   const allItems = [...tickerItems, ...tickerItems]
@@ -49,10 +59,13 @@ export default function TopHeader() {
           <Wifi size={11} />
           LIVE
         </div>
-        <button className="btn-icon" aria-label="Search">
+        <button className="btn-icon" aria-label="Toggle Theme" onClick={() => setIsLight(!isLight)}>
+          {isLight ? <Moon size={16} /> : <Sun size={16} />}
+        </button>
+        <button className="btn-icon" aria-label="Search" onClick={() => alert('Search clicked!')}>
           <Search size={16} />
         </button>
-        <button className="btn-icon" aria-label="Notifications" style={{ position: 'relative' }}>
+        <button className="btn-icon" aria-label="Notifications" style={{ position: 'relative' }} onClick={() => alert('Notifications clicked!')}>
           <Bell size={16} />
           <span style={{
             position: 'absolute', top: 6, right: 6,
